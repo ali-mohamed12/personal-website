@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&display=swap');
+
+body {
+    background-color: #E4F9F5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 5px;
+    width: 5%;
+}
+h2 {
+    color: #40514E;
+    font-family: 'Comic Sans MS';
+}
+h3 {
+    font-family: sans-serif;
+}
+p {
+    font-family: Tahoma;
+    /* width: 50%;
+    margin: auto; */
+    font-size: large;
+    padding: 10px;
+    line-height: 40px;
+}
+main {
+    width: 100%;
+}
+/* Start Header */
+header nav ul {
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a {
+    background-color: #30E3CA;
+    text-decoration: none;
+    padding: 10px;
+    color: #40514E;
+    font-family: Tahoma;
+    border-radius: 3px;
+    border: 2px solid #30E3CA;
+}
+header nav ul li a:hover {
+    background-color: #40514E;
+    color: #30E3CA;
+}
+h1 {
+    font-family: 'Comic Sans MS';
+    color: #40514E;
+}
+header p.intro {
+    border-top: #40514E solid 3px;
+    border-bottom: #40514E solid 3px;
+    width: 20%;
+    margin: auto;
+    font-size: large;
+    font-family: 'Comic Sans MS';
+    padding: 10px;
+    text-align: center;
+}
+header img#top-cloud {
+    /* position: absolute;
+    right: 400px;
+    top: 83px; */
+    display: none;
+}
+header img#bottom-cloud {
+    /* position: absolute;
+    bottom: 400px;
+    left: 100px; */
+    display: none;
+}
+header img#mountain-img {
+    width: 800px;
+}
+/* End Header */
+/* Start Main */
+main section {
+    background-color: #FFF;
+}
+main section#about {
+    margin-top: 15px;
+}
+main section#about img {
+    border: 3px solid #1199;
+    border-radius: 100%;
+    width: 300px;
+    margin: 15px;
+}
+main section#about h2 {
+    color: #40514E;
+    font-family: 'Comic Sans MS';
+}
+main section#about p {
+    font-family: Tahoma;
+    width: 50%;
+    margin: auto;
+    font-size: large;
+    padding: 10px;
+    line-height: 40px;
+}
+main section.my-skills {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    background-color: #E4F9F5;
+}
+main section.my-skills article h3, p {
+    text-align: left;
+}
+/* main section.my-skills article.bycicle h3 {
+    clear: left;
+} */
+main section.my-skills article.web-dev img {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    position: relative;
+    top: -25px;
+}
+main section.my-skills article.bycicle img {
+    width: 25%;
+    float: right;
+    padding: 20px;
+    position: relative;
+    top: -25px;
+}
+/* End Main */
+/* Start Footer */
+footer .get-in-touch {
+    background-color: #FFF;
+    padding: 10px;
+    
+}
+footer .get-in-touch p {
+    text-align: center;
+    width: 50%;
+    margin: auto auto 10px auto;
+}
+footer .get-in-touch a {
+    background-color: #40514E;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: large;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+footer .get-in-touch a:hover {
+    background-color: orange;
+    color: #40514E;
+}
+footer .links {
+    margin: 20px;
+    margin-top: 35px;
+}
+footer .links a {
+    text-decoration: none;
+    color: #40514E;
+    background-color: #30E3CA;
+    padding: 10px;
+    border: 2px solid #30E3CA;
+    margin: 20px;
+    border-radius: 5px;
+}
+footer .links a:hover {
+    background-color: #40514E;
+    color: #30E3CA;
+}
+footer p{
+    text-align: center;
+    margin-top: 25px;
+}
+/* End Footer */
+
+/* Start MediaQueries */
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-family: serif;
+        text-align: center;
+    }
+    header img#top-cloud, img#bottom-cloud {
+        display: none;
+    }
+    header nav ul li{
+        display: flex;
+        flex-flow: wrap column;
+        /* width: 50%;
+        margin: auto; */
+        margin-top: 5px;
+        justify-content: center;
+    }
+    header p.intro {
+        border-top: none;
+        border-bottom: none;
+        width: 100%;
+    }
+    header img#mountain-img {
+        width: 100%;
+    }
+    main section#about img {
+        width: 35%;
+    }
+    main section#about p {
+        width: 90%;
+        text-align: center;
+    }
+    main section.my-skills {
+        width: 70%;
+    }
+    main section.my-skills article h3, p {
+        text-align: left;
+    }
+    main section.my-skills article.web-dev img {
+        float: none;
+        width: 50%;
+    }
+    main section.my-skills article.bycicle img {
+        float: none;
+        width: 50%;
+    }
+    main section.my-skills article p {
+        width: 100%;
+    }
+    footer .get-in-touch p{
+        width: 100%;
+    }
+    footer .links {
+        width: 100%;
+        margin: auto;
+    }
+    footer .links a {
+        display: flex;
+        flex-flow: wrap column;
+    }
+}
+/* iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header img#top-cloud {
+        display: none;
+    }
+    header img#bottom-cloud {
+        display: none;
+    }
+    header img#mountain-img {
+        width: 100%;
+    }
+    header p.intro {
+        border-top: none;
+        border-bottom: none;
+        width: 100%;
+        margin: auto;
+    }
+    main section#about img {
+        width: 30%;
+    }
+    main section#about p {
+        width: 90%;
+    }
+    main section.my-skills {
+        width: 90%;
+    }
+    main section.my-skills article.web-dev img {
+        float: none;
+    }
+    main section.my-skills article.bycicle img {
+        float: none;
+    }
+    footer .get-in-touch {
+        width: 100%;
+    }
+    footer .get-in-touch p{
+        width: 80%;
+    }
+}
+/* Small Screens, Laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header img#top-cloud {
+        display: none;
+    }
+    header img#bottom-cloud {
+        display: none;
+    }
+    header img#mountain-img {
+        width: 100%;
+    }
+    header p.intro {
+        border: none;
+        width: 100%;
+    }
+    main section.my-skills article.web-dev img {
+        float: none;
+        width: 40%;
+    }
+    main section.my-skills article.bycicle img{
+        float: none;
+        width: 40%;
+    }
+}
+
+/* Desktops, Large Screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    header img#top-cloud {
+        display: none;
+    }
+    header img#bottom-cloud {
+        display: none;
+    }
+}
